@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
@@ -7,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arch Install Guide</title>
 </head>
+
 <body>
     <header>
         <h1>Arch Install Guide</h1>
@@ -16,7 +18,7 @@
         <h2>Section 1.0: Network</h2>
         <p>Before continuing throught this setup check that you have to do this.</p>
         <div class="terminal">
-           <p id="terminal-text">$ ping 1.1.1.1</p>
+            <p id="terminal-text">$ ping 1.1.1.1</p>
         </div>
         <p>If you get something along the lines off</p>
         <div class="terminal">
@@ -39,14 +41,38 @@
         </div>
         <p>This will start a scan for networks. Next run.</p>
         <div class="terminal">
-            <p id="terminal-text">$ station (interface) connect (network)</p>
+            <p id="terminal-text">$ station (interface) scan</p>
+        </div>
+        <p>Now to get the names of availbe networks run the command below.</p>
+        <div class="terminal">
+            <p id="terminal-text">$ station (interface) get-networks</p>
         </div>
         <p>Now it will prompt you for a keyphrase enter your wifi password.</p>
         <p>This will connect to the network you want to connect to. Next run.</p>
+        <div class="terminal">
+            <p id="terminal-text">$ exit</p>
+        </div>
+        <p>That will exit iwctl</p>
+        <h2>Section 1.2: Testing Connection</h2>
+        <div class="terminal">
+            <p id="terminal-text">$ ping 1.1.1.1</p>
+        </div>
+        <p>If you get something along the lines off</p>
+        <div class="terminal">
+            <p id="terminal-text">$ 64 bytes from 1.1.1.1: icmp_seq=1 ttl=57 time=18.7 ms</p>
+        </div>
+        <p>then you have a working network connection and should scroll to Section 2.0 if not go back to 1.1.</p>
+        <h2>Section 2.0: Setting up the system</h2>
+        <p>Now that you have a working network connection you can start setting up the system.</p>
+        <p>First off run this following command</p>
+        <div class="terminal">
+            <p id="terminal-text">$ archinstall</p>
+        </div>
     </main>
 
     <footer>
         <p>&copy; Ciaran Gaffney</p>
     </footer>
 </body>
+
 </html>
