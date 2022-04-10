@@ -17,6 +17,10 @@ h2 {
     padding-top: 1vh;
 }
 
+p {
+    font-weight: 300;
+}
+
 footer {
     color: white;
     background-color: rgb(49, 48, 48);
@@ -24,6 +28,10 @@ footer {
 
 ul {
     padding-left: 1vw;
+}
+
+.hyperlink {
+    font-size: larger;
 }
 
 .terminal {
