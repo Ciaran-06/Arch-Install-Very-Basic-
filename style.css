@@ -50,3 +50,9 @@ ul {
 #user-list {
     border: #20C20E 0.4vh solid;
 }
+
+@media only screen and (max-width: 760px) {
+    p {
+      font-size: 1.4vh;
+    }
+  }
